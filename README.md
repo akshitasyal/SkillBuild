@@ -91,7 +91,7 @@ The application should now be running locally.
 
 ## 📸 Screenshots
 
-Add screenshots of the application UI here.
+
 
 Example:
 
