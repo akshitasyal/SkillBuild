@@ -52,7 +52,7 @@ Fiver-Clone
 └── README.md
 ```
 
-## ⚙️ Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -89,7 +89,7 @@ npm run dev
 
 The application should now be running locally.
 
-## 📸 Screenshots
+##  Screenshots
 
 ![Home Page](homepage.png)
 
