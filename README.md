@@ -1,8 +1,8 @@
-# Fiverr Clone
+# SkillBridge
 
 A full-stack web application inspired by Fiverr where users can create gigs, browse services, and hire freelancers. The platform allows freelancers to showcase their skills while clients can find and purchase services easily.
 
-## 🚀 Features
+## Features
 
 * User Authentication (Login / Register)
 * Create, edit and delete gigs
@@ -12,7 +12,7 @@ A full-stack web application inspired by Fiverr where users can create gigs, bro
 * Responsive UI
 * Database integration for storing users and gigs
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend**
 
@@ -30,7 +30,7 @@ A full-stack web application inspired by Fiverr where users can create gigs, bro
 * PostgreSQL
 * Prisma ORM
 
-## 📂 Project Structure
+ Project Structure
 
 ```
 Fiver-Clone
@@ -100,7 +100,7 @@ Example:
 * Gig Details Page
 * User Dashboard
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Payment integration
 * Real-time messaging
@@ -108,7 +108,7 @@ Example:
 * Advanced search filters
 * Deployment with CI/CD
 
-## 👩‍💻 Author
+##  Author
 
 Akshita Syal
 
