@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 import { CREATE_ORDER } from "@/utils/constants";
@@ -192,4 +192,10 @@ function Checkout() {
     );
 }
 
-export default Checkout;
+export default function CheckoutPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading checkout...</div>}>
+            <Checkout />
+        </Suspense>
+    );
+}

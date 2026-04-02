@@ -6,7 +6,7 @@ import { DollarSign, Briefcase, Eye, Star } from "lucide-react";
 import { useStateProvider } from "@/context/StateContext";
 
 const SellerDashboard = () => {
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [{ userInfo }] = useStateProvider();
   const user = userInfo;

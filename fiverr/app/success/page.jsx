@@ -3,7 +3,7 @@
 import { ORDER_SUCCESS_ROUTE } from "../../utils/constants";
 import axios from "axios";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 
 function Success() {
   const router = useRouter();
@@ -76,4 +76,10 @@ function Success() {
   );
 }
 
-export default Success;
+export default function SuccessPage() {
+    return (
+        <Suspense fallback={<div className="h-[80vh] flex items-center justify-center">Finalizing order...</div>}>
+            <Success />
+        </Suspense>
+    );
+}
