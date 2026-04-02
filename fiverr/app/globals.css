@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --color-skillbridge-green: #1dbf73;
+  --color-skillbridge-dark: #404145;
+  --color-skillbridge-gray: #74767e;
+  --color-skillbridge-light: #efeff0;
+  --color-skillbridge-border: #dadbdd;
+
+  --font-inter: "Inter", sans-serif;
+  --font-skillbridge: "Fiverr-Sans", "Inter", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #404145;
+  --skillbridge-primary: #1dbf73;
+  --skillbridge-hover: #19a463;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.skillbridge-container {
+  @apply max-w-[1400px] mx-auto px-4 md:px-8;
+}
+
+.btn-primary {
+  @apply bg-[#1dbf73] text-white px-5 py-2.5 rounded-[4px] font-semibold hover:bg-[#19a463] transition-all duration-300 ease-in-out text-center inline-block;
+}
+
+.btn-outline {
+  @apply border border-[#1dbf73] text-[#1dbf73] px-5 py-2.5 rounded-[4px] font-semibold hover:bg-[#1dbf73] hover:text-white transition-all duration-300 ease-in-out text-center inline-block;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-[#dadbdd] rounded-[4px] focus:outline-none focus:border-[#1dbf73] placeholder:text-[#74767e] transition-all;
+}
+
+.skillbridge-title {
+  @apply text-[32px] font-bold text-[#404145] leading-tight;
+}
+
+.skillbridge-subtitle {
+  @apply text-[18px] font-bold text-[#404145];
+}
+
+.skillbridge-text {
+  @apply text-[15px] text-[#62646a] leading-[24px];
+}
+
+.skillbridge-label {
+  @apply text-[14px] font-bold text-[#404145] mb-2 block;
+}
+
+.skillbridge-card {
+  @apply bg-white border border-[#dadbdd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden;
+}
+
+.skillbridge-section-py {
+  @apply py-12 md:py-20;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.slide-in-from-top-2 {
+  animation: slideInFromTop 0.4s ease-out forwards;
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
