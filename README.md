@@ -89,9 +89,13 @@ npm run dev
 
 The application should now be running locally.
 
-##  Screenshots
+------
 
-![Home Page](homepage.png)
+## Home Page
+
+<img src="https://github.com/user-attachments/assets/4d0c4304-1298-4488-8c62-c61308d8f92a" 
+     alt="Home Page Screenshot" 
+     width="100%" />
 
 Example:
 
